@@ -1,0 +1,41 @@
+/*
+Date: 1/17/20
+Title: Fizz Buzz Challenge
+Objective: 
+Write a short program that prints each number from 1 to 100 on a new line.
+ For each multiple of 3, print "Fizz" instead of the number.
+ For each multiple of 5, print "Buzz" instead of the number.
+ For numbers which are multiples of both 3 and 5, print "FizzBuzz" instead of the number.
+*/
+
+class Main {
+  public static void main(String[] args) {
+    System.out.println("Hello world!");
+    for(int k= 100; k > 0 ; k -- ){
+
+      /*if (k%3==0 && k%5==0){
+        System.out.println(k + "FizzBuzz");
+      }*/
+
+      if(k%3==0){//if k is a multiple of 3 print "Fizz"
+        System.out.print(k + " Fizz");
+        if(k%5==0){//if k is also a multiplfe of 5 print "Buzz"
+          System.out.print("Buzz");
+        }
+        System.out.print("\n");// go to next line
+                      
+      }//end if multiple of 3
+      
+      else if(k%5==0){
+        System.out.println(k + " Buzz");    
+      }//end if multiple of 5
+    
+      else{
+        System.out.println(k);        
+      }//end else
+      
+    }//end for loop
+    System.out.println("Blastoff");
+
+  }//end main method
+}//end Main Class
